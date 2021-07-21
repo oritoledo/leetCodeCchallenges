@@ -1,2 +1,2 @@
 # leetCodeCchallenges
-Leetcode challenges in C.
+Leetcode challenges in the C programming language.
