@@ -4,17 +4,17 @@
 
 
 int reverse(int x){
-    int rev = 0;
+    int reversed = 0;
     while (x != 0){
-            int pop = x % 10;
+            int p = x % 10;
             x /= 10;
-            if (rev > INT_MAX/10 || (rev == INT_MAX / 10 && pop > 7)) {
+            if (reversed > INT_MAX/10 || (rev == INT_MAX / 10 && p > 7)) {
                 return 0;
             }
-            else if (rev < INT_MIN/10 || (rev == INT_MIN / 10 && pop < -8)) {
+            else if (rev < INT_MIN/10 || (rev == INT_MIN / 10 && p < -8)) {
                 return 0;
             }
-            rev = rev * 10 + pop;
+            reversed = reversed * 10 + p;
         }
-        return rev;
+        return reversed;
     }
