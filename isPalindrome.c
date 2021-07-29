@@ -9,8 +9,7 @@ bool isPalindrome(int x){
     int r = 0;
     int tmp = x;
     while (tmp !=0){
-        int rem;
-        rem = tmp % 10;
+        int rem = tmp % 10;
         if (r > INT_MAX / 10 || (r == INT_MAX / 10 && rem > 7)) return 0;
         r = r * 10 + rem;
         tmp /= 10;
